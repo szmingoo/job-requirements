@@ -1,0 +1,61 @@
+.job-requirements {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* 确保 padding 不会影响整体宽度 */
+}
+
+.job-requirements h1 {
+    text-align: center;
+}
+
+.position-requirements-textarea, .report-requirements-textarea {
+    width: 100%; /* 使 textarea 占据容器的全部宽度 */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+    resize: none; /* 禁止用户手动调整大小 */
+    box-sizing: border-box; /* 确保 padding 不会影响整体宽度 */
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* 使按钮容器居中 */
+    margin-top: 20px;
+    gap: 20%; /* 设置按钮之间的间距 */
+    flex-wrap: wrap; /* 允许按钮在小屏幕上换行 */
+}
+
+.buttons button {
+    flex: 1 1 auto; /* 使按钮在必要时收缩 */
+    margin: 10px; /* 设置按钮的外边距 */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    text-align: center; /* 确保文本居中 */
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* 添加媒体查询以处理移动设备上的样式 */
+@media (max-width: 200px) {
+    .buttons {
+        flex-direction: column; /* 垂直排列按钮 */
+    }
+    .buttons button {
+        width: 50%; /* 使按钮占据容器的全部宽度 */
+        margin: 5px 0; /* 设置按钮上下的外边距 */
+    }
+}

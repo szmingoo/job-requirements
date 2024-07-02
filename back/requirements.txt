@@ -1,0 +1,8 @@
+aiofiles==24.1.0
+fastapi==0.111.0
+fitz==0.0.1.dev2
+jieba==0.42.1
+jieba3k==0.35.1
+pydantic==2.7.4
+Requests==2.32.3
+uvicorn==0.30.1
